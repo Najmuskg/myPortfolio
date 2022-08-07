@@ -1,0 +1,103 @@
+body {
+  background-color: $color--white;
+  color: $color--body-copy;
+  display: flex;
+  flex-direction: column;
+  // min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  max-width: $site-width + px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  width: 944px;
+  font-family: "MADE Canvas";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 125px;
+  line-height: 152px;
+  color: $color--black;
+  margin: 0 0 30px 0;
+  z-index: 991;
+  position: relative;
+  @include medium-screen {
+    @media (max-width: 1366px) {
+      font-size: 80px;
+      width: 700px;
+      margin: 0;
+      top: -30px;
+    }
+  }
+  @include mobile-screen {
+    @media (max-width: 576px) {
+      font-size: 48px;
+      width: 330px;
+      margin: 0;
+      // height: 105px;
+      top: -60px;
+    }
+  }
+}
+
+h3 {
+  width: 343px;
+  height: 83px;
+  font-family: "MADE Canvas";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 83px;
+  color: $color--black;
+  margin: 0 0 30px 0;
+  z-index: 991;
+  position: relative;
+  @include medium-screen {
+    @media (max-width: 1366px) {
+      font-size: 50px;
+      width: 700px;
+      margin: 0;
+    }
+  }
+  @include mobile-screen {
+    @media (max-width: 576px) {
+      font-size: 34px;
+      width: 330px;
+      margin: 0;
+    }
+  }
+}
+
+a {
+  font-family: "popins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  color: $color--black;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  color: $color--body-copy;
+  font-family: "popins";
+  font-size: $baseFontSize;
+  line-height: 160%;
+  margin: 0;
+}
+input,
+button,
+textarea {
+  &:focus {
+    outline: none;
+  }
+}

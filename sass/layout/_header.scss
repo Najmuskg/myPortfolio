@@ -1,0 +1,239 @@
+.main--area {
+    margin-left: 340px;
+    transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+    @include medium-screen {
+        @media (max-width: 1366px) {
+            margin-left: 260px;
+        }
+    }
+    @include mobile-screen {
+        @media (max-width: 576px) {
+            margin-left: 0px;
+            transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+        }
+    }
+  
+    &.active {
+        margin-left: 0px;
+        transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+        @include medium-screen {
+            @media (max-width: 1366px) {
+                margin-left: 25px;
+            }
+        }
+        @include mobile-screen {
+            @media (max-width: 576px) {
+                left: -270%;
+                position: fixed;
+            }
+        }
+       
+    }
+}
+
+.header--area {
+    width: 100%;
+    padding: 20px 0;
+    z-index: 99;
+    @include mobile-screen {
+        @media (max-width: 576px) {
+            padding: 0;
+        }
+    }
+
+    .inner--header {
+        @include d-flex;
+        min-height: 100px;
+        align-items: center;
+        @include medium-screen {
+            @media (max-width: 1366px) {
+                padding: 0 20px;
+            }
+        }
+        @include mobile-screen {
+            @media (max-width: 576px) {
+                padding: 0 20px;
+            }
+        }
+      
+        
+        .menu--area {
+            width: 70%;
+            .menu--icon {
+                width: 37px;
+                height: 37px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                z-index: 991;
+                transition: all 0.9s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+                overflow: hidden;
+                padding: 0;
+                position: fixed;
+                top: 27px;
+                display: none;
+                @include mobile-screen {
+                    @media (max-width: 576px) {
+                        display: block;
+                    }
+                }
+
+                &.active {
+                    display: block;
+                    transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+                }
+
+                i {
+                    background-color: $color--black;
+                    width: 100%;
+                    height: 2px;
+                    display: block;
+                    margin-top: 8px;
+                    transition: all 0.3s ease-in-out;
+
+                    &:nth-child(1) {
+                        width: 10px;
+                        margin-left: 16px;
+                    }
+                    &:nth-child(2) {
+                        width: 27px;
+                    }
+                    &:nth-child(3) {
+                        width: 10px;
+                    }
+                }
+            }
+            ul {
+                list-style: none;
+                position: fixed;
+                background-color: transparent;
+                width: 22%;
+                height: 100%;
+                top: 0;
+                left: -100%;
+                padding: 200px 0 0 30px;
+                // transition: all 0.2s ease-in-out;
+                border-right: 1px solid #ececec;
+                @include medium-screen {
+                    @media (max-width: 1366px) {
+                        padding: 100px 0 0 30px;
+                    }
+                }
+                @include mobile-screen {
+                    @media (max-width: 576px) {
+                        width: 100%;
+                        border-right: none;
+                        background-color: transparent;
+                        padding: 100px 0 0 30px;
+                        transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+                    }
+                }
+                &.active {
+                    left: 0;
+                    transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+
+                    @include mobile-screen {
+                        @media (max-width: 576px) {
+                            display: none;
+                            &.active1 {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                
+                .img--nav {
+                    float: right;
+                    top: -61px;
+                    left: -20px;
+                    position: relative;
+                    display: none;
+                   
+                    &.active{
+                        display: block;
+                     
+                    }
+                }
+                .closebtn {
+                    position: absolute;
+                    top: 38px;
+                    left: -23px;
+                    font-size: 67px;
+                    margin-left: 50px;
+
+                    .close--icon {
+                        width: 37px;
+                        height: 37px;
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        z-index: 991;
+                        transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+                        overflow: hidden;
+                        padding: 0;
+                        top: 27px;
+
+                        i {
+                            background-color: $color--black;
+                            width: 100%;
+                            height: 2px;
+                            display: block;
+                            margin-top: 8px;
+                            transition: all 0.3s ease-in-out;
+
+                            &:nth-child(1) {
+                                width: 10px;
+                                margin-left: 16px;
+                            }
+                            &:nth-child(2) {
+                                width: 27px;
+                            }
+                            &:nth-child(3) {
+                                width: 10px;
+                            }
+                        }
+                    }
+                }
+
+                li {
+                    margin-top: 30px;
+                    width: 300px;
+                    a {
+                        font-family: "Poppins";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 20px;
+                        color: $color--2;
+                        z-index: 991;
+                        @include medium-screen {
+                            @media (max-width: 1366px) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &::after {
+                            @include animate-line;
+                        }
+                        &:hover {
+                            letter-spacing: 0.67em;
+                            transition: all 0.5s ease;
+                            @include medium-screen {
+                                @media (max-width: 1366px) {
+                                    letter-spacing: 0.47em;
+                                }
+                            }
+                            &::after {
+                                @include animate-line-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .logo--area {
+            width: 30%;
+            text-align: end;
+        }
+    }
+}
