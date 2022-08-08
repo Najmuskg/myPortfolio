@@ -164,7 +164,7 @@ textarea:focus {
 
 @font-face {
   font-family: 'MADE Canvas';
-  src: url("MADECanvas-Black.woff2") format("woff2"), url("MADECanvas-Black.woff") format("woff");
+  src: url("../fonts/MADECanvas-Black.woff2") format("woff2"), url("../fonts/MADECanvas-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -172,7 +172,7 @@ textarea:focus {
 
 @font-face {
   font-family: 'MADE Canvas';
-  src: url("MADECanvas-Light.woff2") format("woff2"), url("MADECanvas-Light.woff") format("woff");
+  src: url("../fonts/MADECanvas-Light.woff2") format("woff2"), url("../fonts/MADECanvas-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -180,7 +180,7 @@ textarea:focus {
 
 @font-face {
   font-family: 'MADE Canvas';
-  src: url("MADECanvas.woff2") format("woff2"), url("MADECanvas.woff") format("woff");
+  src: url("../fonts/MADECanvas.woff2") format("woff2"), url("../fonts/MADECanvas.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
