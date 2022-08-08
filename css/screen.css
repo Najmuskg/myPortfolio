@@ -608,6 +608,14 @@ textarea:focus {
   }
 }
 
+@media (max-width: 768px) and (max-width: 768px) {
+  .banner--area .inner--banner .banner--description p {
+    width: 416px;
+    font-size: 17px;
+    top: -35px;
+  }
+}
+
 @media (max-width: 576px) and (max-width: 576px) {
   .banner--area .inner--banner .banner--description p {
     font-size: 14px;

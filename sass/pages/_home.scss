@@ -85,6 +85,13 @@
                         top: -35px;
                     }
                   }
+                  @include tab-screen {
+                    @media (max-width: 768px) {
+                        width: 416px;
+                        font-size: 17px;
+                        top: -35px;
+                    }
+                 }
                 @include mobile-screen {
                     @media (max-width: 576px) {
                         font-size: 14px;
