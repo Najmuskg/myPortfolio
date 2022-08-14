@@ -12,7 +12,7 @@
             transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
         }
     }
-  
+
     &.active {
         margin-left: 0px;
         transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
@@ -27,14 +27,12 @@
                 position: fixed;
             }
         }
-       
     }
 }
 
 .header--area {
     width: 100%;
-    padding: 20px 0;
-    z-index: 99;
+    height: 100px;
     @include mobile-screen {
         @media (max-width: 576px) {
             padding: 0;
@@ -55,8 +53,7 @@
                 padding: 0 20px;
             }
         }
-      
-        
+
         .menu--area {
             width: 70%;
             .menu--icon {
@@ -107,12 +104,12 @@
                 list-style: none;
                 position: fixed;
                 background-color: transparent;
-                width: 22%;
+                max-width: 23%;
                 height: 100%;
                 top: 0;
                 left: -100%;
-                padding: 200px 0 0 30px;
-                // transition: all 0.2s ease-in-out;
+                padding: 200px 0 0 80px;
+                transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
                 border-right: 1px solid #ececec;
                 @include medium-screen {
                     @media (max-width: 1366px) {
@@ -141,17 +138,16 @@
                         }
                     }
                 }
-                
+
                 .img--nav {
                     float: right;
                     top: -61px;
                     left: -20px;
                     position: relative;
                     display: none;
-                   
-                    &.active{
+
+                    &.active {
                         display: block;
-                     
                     }
                 }
                 .closebtn {
@@ -159,8 +155,7 @@
                     top: 38px;
                     left: -23px;
                     font-size: 67px;
-                    margin-left: 50px;
-
+                    margin-left: 103px;
                     .close--icon {
                         width: 37px;
                         height: 37px;
@@ -172,7 +167,6 @@
                         overflow: hidden;
                         padding: 0;
                         top: 27px;
-
                         i {
                             background-color: $color--black;
                             width: 100%;
@@ -198,11 +192,12 @@
                 li {
                     margin-top: 30px;
                     width: 300px;
+
                     a {
                         font-family: "Poppins";
                         font-style: normal;
                         font-weight: 600;
-                        font-size: 18px;
+                        font-size: 16px;
                         line-height: 20px;
                         color: $color--2;
                         z-index: 991;
@@ -216,6 +211,7 @@
                             @include animate-line;
                         }
                         &:hover {
+                            color: $color--black;
                             letter-spacing: 0.67em;
                             transition: all 0.5s ease;
                             @include medium-screen {
@@ -234,6 +230,20 @@
         .logo--area {
             width: 30%;
             text-align: end;
+            img {
+                z-index: 991;
+                top: 41px;
+                right: 83px;
+                position: fixed;
+                transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+                &.active {
+                    z-index: 991;
+                    top: 41px;
+                    right: 253px;
+                    position: fixed;
+                    transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+                }
+            }
         }
     }
 }

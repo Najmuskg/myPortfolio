@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'MADE Canvas';
-    src: url('../fonts/MADECanvas-Black.woff2') format('woff2'),
-        url('../fonts/MADECanvas-Black.woff') format('woff');
+    src: url('/assets/fonts/MADECanvas-Black.woff2') format('woff2'),
+        url('/assets/fonts/MADECanvas-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'MADE Canvas';
-    src: url('../fonts/MADECanvas-Light.woff2') format('woff2'),
-        url('../fonts/MADECanvas-Light.woff') format('woff');
+    src: url('/assets/fonts/MADECanvas-Light.woff2') format('woff2'),
+        url('/assets/fonts/MADECanvas-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -18,9 +18,34 @@
 
 @font-face {
     font-family: 'MADE Canvas';
-    src: url('../fonts/MADECanvas.woff2') format('woff2'),
-        url('../fonts/MADECanvas.woff') format('woff');
+    src: url('/assets/fonts/MADECanvas.woff2') format('woff2'),
+        url('/assets/fonts/MADECanvas-Black.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins-Black.woff2') format('woff2'),
+        url('/assets/fonts/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('/assets/fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins-Medium.woff2') format('woff2'),
+        url('/assets/fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }

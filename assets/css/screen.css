@@ -60,11 +60,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: 100vh;
   position: relative;
+  -webkit-animation: background 70s infinite;
+          animation: background 70s infinite;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
   position: relative;
 }
@@ -74,10 +77,10 @@ h1 {
   font-family: "MADE Canvas";
   font-style: normal;
   font-weight: 900;
-  font-size: 125px;
+  font-size: 103px;
   line-height: 152px;
   color: #000000;
-  margin: 0 0 30px 0;
+  margin: 0 0 5px 0;
   z-index: 991;
   position: relative;
 }
@@ -106,10 +109,10 @@ h3 {
   font-family: "MADE Canvas";
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
+  font-size: 60px;
   line-height: 83px;
   color: #000000;
-  margin: 0 0 30px 0;
+  margin: 0 0 5px 0;
   z-index: 991;
   position: relative;
 }
@@ -164,7 +167,7 @@ textarea:focus {
 
 @font-face {
   font-family: 'MADE Canvas';
-  src: url("../fonts/MADECanvas-Black.woff2") format("woff2"), url("../fonts/MADECanvas-Black.woff") format("woff");
+  src: url("/assets/fonts/MADECanvas-Black.woff2") format("woff2"), url("/assets/fonts/MADECanvas-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -172,7 +175,7 @@ textarea:focus {
 
 @font-face {
   font-family: 'MADE Canvas';
-  src: url("../fonts/MADECanvas-Light.woff2") format("woff2"), url("../fonts/MADECanvas-Light.woff") format("woff");
+  src: url("/assets/fonts/MADECanvas-Light.woff2") format("woff2"), url("/assets/fonts/MADECanvas-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -180,8 +183,32 @@ textarea:focus {
 
 @font-face {
   font-family: 'MADE Canvas';
-  src: url("../fonts/MADECanvas.woff2") format("woff2"), url("../fonts/MADECanvas.woff") format("woff");
+  src: url("/assets/fonts/MADECanvas.woff2") format("woff2"), url("/assets/fonts/MADECanvas-Black.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/assets/fonts/Poppins-Black.woff2") format("woff2"), url("/assets/fonts/Poppins-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/assets/fonts/Poppins-SemiBold.woff2") format("woff2"), url("/assets/fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/assets/fonts/Poppins-Medium.woff2") format("woff2"), url("/assets/fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -205,6 +232,150 @@ textarea:focus {
   to {
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
+  }
+}
+
+@-webkit-keyframes background {
+  0% {
+    background: #fff;
+  }
+  10% {
+    background: #FFF8EF;
+  }
+  20% {
+    background: #FFFDEF;
+  }
+  30% {
+    background: #F9FFEF;
+  }
+  40% {
+    background: #F2FFEF;
+  }
+  50% {
+    background: #EFFFF4;
+  }
+  60% {
+    background: #EFFFFC;
+  }
+  70% {
+    background: #EFFBFF;
+  }
+  80% {
+    background: #EFF2FF;
+  }
+  90% {
+    background: #EFF1FF;
+  }
+  100% {
+    background: #F3EFFF;
+  }
+}
+
+@keyframes background {
+  0% {
+    background: #fff;
+  }
+  10% {
+    background: #FFF8EF;
+  }
+  20% {
+    background: #FFFDEF;
+  }
+  30% {
+    background: #F9FFEF;
+  }
+  40% {
+    background: #F2FFEF;
+  }
+  50% {
+    background: #EFFFF4;
+  }
+  60% {
+    background: #EFFFFC;
+  }
+  70% {
+    background: #EFFBFF;
+  }
+  80% {
+    background: #EFF2FF;
+  }
+  90% {
+    background: #EFF1FF;
+  }
+  100% {
+    background: #F3EFFF;
+  }
+}
+
+@-webkit-keyframes tablet {
+  0% {
+    background: #ffe2e2;
+  }
+  10% {
+    background: #ffd6bf;
+  }
+  20% {
+    background: #ffedbf;
+  }
+  30% {
+    background: #dbffbf;
+  }
+  40% {
+    background: #bfffe4;
+  }
+  50% {
+    background: #bfe4ff;
+  }
+  60% {
+    background: #d5dbfd;
+  }
+  70% {
+    background: #ebd5fd;
+  }
+  80% {
+    background: #FFC0DA;
+  }
+  90% {
+    background: #FFC0C7;
+  }
+  100% {
+    background: #FFE2C0;
+  }
+}
+
+@keyframes tablet {
+  0% {
+    background: #ffe2e2;
+  }
+  10% {
+    background: #ffd6bf;
+  }
+  20% {
+    background: #ffedbf;
+  }
+  30% {
+    background: #dbffbf;
+  }
+  40% {
+    background: #bfffe4;
+  }
+  50% {
+    background: #bfe4ff;
+  }
+  60% {
+    background: #d5dbfd;
+  }
+  70% {
+    background: #ebd5fd;
+  }
+  80% {
+    background: #FFC0DA;
+  }
+  90% {
+    background: #FFC0C7;
+  }
+  100% {
+    background: #FFE2C0;
   }
 }
 
@@ -252,8 +423,7 @@ textarea:focus {
 
 .header--area {
   width: 100%;
-  padding: 20px 0;
-  z-index: 99;
+  height: 100px;
 }
 
 @media (max-width: 576px) and (max-width: 576px) {
@@ -351,11 +521,14 @@ textarea:focus {
   list-style: none;
   position: fixed;
   background-color: transparent;
-  width: 22%;
+  max-width: 23%;
   height: 100%;
   top: 0;
   left: -100%;
-  padding: 200px 0 0 30px;
+  padding: 200px 0 0 80px;
+  -webkit-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+  -o-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+  transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
   border-right: 1px solid #ececec;
 }
 
@@ -410,7 +583,7 @@ textarea:focus {
   top: 38px;
   left: -23px;
   font-size: 67px;
-  margin-left: 50px;
+  margin-left: 103px;
 }
 
 .header--area .inner--header .menu--area ul .closebtn .close--icon {
@@ -461,7 +634,7 @@ textarea:focus {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   color: #576665;
   z-index: 991;
@@ -487,6 +660,7 @@ textarea:focus {
 }
 
 .header--area .inner--header .menu--area ul li a:hover {
+  color: #000000;
   letter-spacing: 0.67em;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -509,10 +683,30 @@ textarea:focus {
   text-align: end;
 }
 
+.header--area .inner--header .logo--area img {
+  z-index: 991;
+  top: 41px;
+  right: 83px;
+  position: fixed;
+  -webkit-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+  -o-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+  transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+}
+
+.header--area .inner--header .logo--area img.active {
+  z-index: 991;
+  top: 41px;
+  right: 253px;
+  position: fixed;
+  -webkit-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+  -o-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+  transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+}
+
 .banner--area {
   width: 100%;
-  height: 100vh;
-  padding-top: 70px;
+  padding-top: 100px;
+  min-height: 80vh;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -548,13 +742,15 @@ textarea:focus {
   position: absolute;
   width: 719.25px;
   height: 314.57px;
-  right: 262.65px;
-  top: 49px;
+  right: 153.65px;
+  top: 50px;
   background: #ffbfbf;
   border-radius: 157.286px;
-  -webkit-transform: rotate(51.27deg);
-      -ms-transform: rotate(51.27deg);
-          transform: rotate(51.27deg);
+  -webkit-transform: rotate(38.27deg);
+      -ms-transform: rotate(38.27deg);
+          transform: rotate(38.27deg);
+  -webkit-animation: tablet 60s infinite;
+          animation: tablet 60s infinite;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -588,12 +784,11 @@ textarea:focus {
 }
 
 .banner--area .inner--banner .banner--description p {
-  width: 1026px;
+  width: 993px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 17px;
   color: #576665;
   margin: 0 0 100px 0;
   z-index: 991;
@@ -633,10 +828,10 @@ textarea:focus {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFE2E2;
   text-decoration: none;
-  padding: 20px 100px;
+  padding: 20px 90px;
   text-transform: uppercase;
 }
 
@@ -656,17 +851,15 @@ textarea:focus {
 }
 
 .banner--area .inner--banner .button a:hover {
-  background-color: #ffffff;
+  background-color: #FFF0DE;
   color: #000000;
   -webkit-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
   -o-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
   transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
-  letter-spacing: 0.67em;
 }
 
 .about--area {
   width: 100%;
-  height: 100vh;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -683,9 +876,9 @@ textarea:focus {
 }
 
 .about--area .img1 {
-  top: 505px;
-  right: 304px;
-  position: absolute;
+  top: 485px;
+  right: 260px;
+  position: fixed;
   z-index: 9111111;
   max-width: 130px;
 }
@@ -707,11 +900,11 @@ textarea:focus {
 }
 
 .about--area .img2 {
-  position: absolute;
-  top: 70px;
-  right: 200px;
+  position: fixed;
+  top: -5px;
+  right: 130px;
   z-index: 991;
-  max-width: 390px;
+  max-width: 427px;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -740,16 +933,18 @@ textarea:focus {
 }
 
 .about--area .inner--about .bg--color {
-  position: absolute;
+  position: fixed;
   width: 590.71px;
   height: 271.82px;
-  left: 552.08px;
-  top: 184.08px;
+  right: 46px;
+  top: 253.08px;
   background: #ffbfbf;
   border-radius: 236.628px;
   -webkit-transform: rotate(39.27deg);
       -ms-transform: rotate(39.27deg);
           transform: rotate(39.27deg);
+  -webkit-animation: tablet 60s infinite;
+          animation: tablet 60s infinite;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -774,13 +969,13 @@ textarea:focus {
 }
 
 .about--area .inner--about .about--sub_title h3 {
-  margin: 0 0 -35px 276px;
+  margin: 0 0 -35px 238px;
   width: 200px;
   height: 83px;
   font-family: "MADE Canvas";
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
+  font-size: 60px;
   line-height: 83px;
   color: #576665;
 }
@@ -805,7 +1000,7 @@ textarea:focus {
   font-family: "MADE Canvas";
   font-style: normal;
   font-weight: 900;
-  font-size: 132px;
+  font-size: 103px;
   line-height: 152px;
   color: #000000;
 }
@@ -826,11 +1021,11 @@ textarea:focus {
 }
 
 .about--area .inner--about .about--description p {
-  width: 734px;
+  width: 690px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
   color: #576665;
   z-index: 991;
@@ -880,13 +1075,23 @@ textarea:focus {
 }
 
 .about--area .inner--about .social--menu ul li a {
-  display: block;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #576665;
   background: #e4e2e2;
   padding: 10px 5px 10px 9px;
-  border-radius: 20px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -908,7 +1113,7 @@ textarea:focus {
 }
 
 .about--area .inner--about .social--menu ul li a:hover {
-  background-color: #ffffff;
+  background-color: #989393;
   -webkit-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
   -o-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
   transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
@@ -916,7 +1121,6 @@ textarea:focus {
 
 .contact--area {
   width: 100%;
-  height: 100vh;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -952,9 +1156,9 @@ textarea:focus {
   width: 733px;
   font-size: 132px;
   font-display: swap;
-  line-height: 152px;
+  line-height: 100px;
   color: #000000;
-  margin: 0 0 6px 0;
+  margin: 0 0 20px 0;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -980,10 +1184,10 @@ textarea:focus {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
   color: #576665;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -1006,11 +1210,10 @@ textarea:focus {
 }
 
 .contact--area .inner--contact #name {
-  width: 47%;
-  height: 60px;
+  width: 505px;
+  height: 50px;
   text-align: center;
-  margin: 0 25px 25px 0;
-  padding: 0 0 0 10px;
+  margin: 0 3px 20px 0;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -1048,9 +1251,9 @@ textarea:focus {
 }
 
 .contact--area .inner--contact #details {
-  width: 1159px;
-  height: 240px;
-  margin-bottom: 50px;
+  width: 1019px;
+  height: 220px;
+  margin-bottom: 35px;
   padding: 0 0 0 10px;
 }
 
@@ -1073,8 +1276,8 @@ textarea:focus {
 }
 
 .contact--area .inner--contact button {
-  width: 48%;
-  height: 65px;
+  width: 508px;
+  height: 50px;
   color: #ffffff;
   font-size: 16px;
   background-color: #576665;
@@ -1131,6 +1334,7 @@ textarea:focus {
 
 .works--area .inner--works {
   width: 100%;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -1146,16 +1350,18 @@ textarea:focus {
 }
 
 .works--area .inner--works .bg--color {
-  position: absolute;
+  position: fixed;
   width: 701.25px;
   height: 314.57px;
-  left: 500px;
-  top: 250px;
+  right: 0;
+  top: 287px;
   background: #ffbfbf;
   border-radius: 157.286px;
-  -webkit-transform: rotate(42.27deg);
-      -ms-transform: rotate(42.27deg);
-          transform: rotate(42.27deg);
+  -webkit-transform: rotate(40.27deg);
+      -ms-transform: rotate(40.27deg);
+          transform: rotate(40.27deg);
+  -webkit-animation: tablet 60s infinite;
+          animation: tablet 60s infinite;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -1181,6 +1387,7 @@ textarea:focus {
 
 .works--area .inner--works .works--sub_title h3 {
   margin: 0;
+  font-size: 50px;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -1203,7 +1410,7 @@ textarea:focus {
   font-family: "MADE Canvas";
   font-style: normal;
   font-weight: 900;
-  font-size: 110px;
+  font-size: 95px;
   line-height: 152px;
   color: #000000;
 }
@@ -1225,11 +1432,11 @@ textarea:focus {
 }
 
 .works--area .inner--works .works--description p {
-  width: 1101px;
+  width: 981px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   color: #576665;
   margin: 0 0 50px 0;
@@ -1262,7 +1469,6 @@ textarea:focus {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  padding: 0 0 0 100px;
 }
 
 @media (max-width: 1366px) and (max-width: 1366px) {
@@ -1291,7 +1497,7 @@ textarea:focus {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 350px;
+  height: 280px;
   width: 480px;
   padding: 0.625rem;
   position: relative;

@@ -14,6 +14,7 @@
 @mixin animate-line-hover {
     left: 0;
     width: 100%;
+   
 }
 
 @mixin bg-cover {
@@ -55,3 +56,6 @@
       @content;
     }
  }
+
+
+ 

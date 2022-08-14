@@ -1,21 +1,88 @@
-@keyframes img{
-    from{
-        transform: translateY(0px);
-    }
-    to{
-        transform: translateY(50px); 
-    }
+@keyframes img {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes background {
+  0% {
+    background: #fff;
+  }
+
+  10% {
+    background: #FFF8EF;
+  }
+
+  20% {
+    background: #FFFDEF;
+ 
+  }
+  30% {
+    background: #F9FFEF;
+  }
+  40% {
+    background: #F2FFEF;
+  }
+  50% {
+    background: #EFFFF4;
+  }
+  60% {
+    background: #EFFFFC;
+  }
+  70% {
+    background: #EFFBFF;
+  }
+  80% {
+    background: #EFF2FF;
+  }
+  90% {
+    background: #EFF1FF;
+  }
+100% {
+    background: #F3EFFF;
+  }
 }
 
 
-// @keyframes preload {
-//     0% {
-//         transform: scale(1, 1);
-//     }
-//     50% {
-//         transform: scale(1.5, 1.5);
-//     }
-//     100% {
-//         transform: scale(1, 1);
-//     }
-// }
+
+@keyframes tablet {
+  0% {
+    background: #ffe2e2;
+  }
+
+  10% {
+    background: #ffd6bf;
+  }
+
+  20% {
+    background: #ffedbf;
+  
+  }
+  30% {
+    background: #dbffbf;
+  }
+  40% {
+    background: #bfffe4;
+  }
+  50% {
+    background: #bfe4ff;
+  }
+  60% {
+    background: #d5dbfd;
+  }
+  70% {
+    background: #ebd5fd;
+  }
+  80% {
+    background: #FFC0DA;
+  }
+  90% {
+    background: #FFC0C7;
+  }
+100% {
+    background: #FFE2C0;
+  }
+}
